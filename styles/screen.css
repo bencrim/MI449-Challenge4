@@ -1,50 +1,164 @@
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background: #FFFFFF;
     padding: 0 40px;
     text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    row-gap: 10%;
 }
 
 h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 1px;
 }
 
-img.about {
-    opacity: 0.5;
+h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.titlecard {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#profilepic {
+    border-radius: 50%;
+    height: 137px;
+    width: 137px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    height: 168px;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+}
+
+#rocketlogo {
+    width: 48px;
+    height: 44px;
+}
+
+#spartanlogo {
+    width: 48px;
+    height: 56px;
+}
+
+.biography {
+    background-color: #EAF4F4;
+    height: 349px;
+    width: 1000px;
+    border-radius: 35px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+    justify-self: right;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+p {
+    padding: 20px 20px;
+    margin: 0 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    width: 428px;
+    height: 450px;
+    background-color: #EAF4F4;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+    border-radius: 35px;
+}
+
+.commits {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 40px;
+}
+
+.pullrequests {
+    display: flex;
+    flex-direction: row;
+    padding: 45px 40px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    padding: 45px 40px;
+}
+
+.designs {
+    width: 1100px;
+}
+
+.thumbnails {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.link {
+    width: 300px;
+    height: 166px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+    background-image: url(/images/wip.png);
+}
+
+.designs h1 {
+    width: 794px;
+}
+
+.topleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
