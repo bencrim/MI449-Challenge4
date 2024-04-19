@@ -121,16 +121,28 @@ p {
     padding: 50px 40px;
 }
 
+.commits h2 {
+    margin-left: 60px;
+}
+
 .pullrequests {
     display: flex;
     flex-direction: row;
     padding: 45px 40px;
 }
 
+.pullrequests h2 {
+    margin-left: 60px;
+}
+
 .skills {
     display: flex;
     flex-direction: row;
     padding: 45px 40px;
+}
+
+.skills h2 {
+    margin-left: 30px;
 }
 
 .designs {
